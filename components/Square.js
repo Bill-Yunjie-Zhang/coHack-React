@@ -20,6 +20,7 @@ class Square extends React.Component{
         return (
             <button style={style} onClick={() => {
                 this.setState({value: this.props.symbol})
+                this.props.changeCashe(this.props.id, this.props.symbol)
                 this.props.changeSymbol()
             }}>{this.state.value}</button>
         )
